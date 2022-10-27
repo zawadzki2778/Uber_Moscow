@@ -1,6 +1,9 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 header {
   position: relative;
 }
@@ -38,13 +41,14 @@ nav {
   min-width: 100%;
   margin-top: 16px;
 }
-.subheader .subheader_offisial {
+.subheader .subheader_official {
   margin-top: 6px;
-  opacity: 0.5;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 100;
   color: #ffffff;
+  opacity: 0.5;
 }
+
 .subheader .subheader_call {
   color: #ffffff;
   font-size: 12px;
@@ -76,7 +80,7 @@ nav {
 }
 .promo {
   min-height: 800px;
-  background: url("./img/background1.jpg") center center/cover no-repeat;
+  background: url("./assets/img/background1.jpg") center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
 .promo .promo_header {
