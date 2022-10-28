@@ -30,10 +30,15 @@ nav {
   padding-right: 28px;
 }
 .subheader {
-  position: absolute;
-  width: 100%;
+  position: absolute; /* что бы картинка наехала */
+  width: 100%; /* 100% от родителя header*/
   height: 84px;
-  background: rgba(0, 0, 0, 0.6); /* задаём прозрачность 0.6 через rgba, что бы распространялась не на все эл-ты (как если бы её прописать - opacity: 0.6; */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* задаём прозрачность 0.6 через rgba, что бы распространялась не на все эл-ты (как если бы её прописать - opacity: 0.6; */
 }
 .subheader .subheader_logo {
   display: block;
@@ -76,9 +81,10 @@ nav {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
+/* section promo*/
 .promo {
   min-height: 800px;
-  background: url("./assets/img/background1.jpg") center center/cover no-repeat;
+  background: url("../img/background1.jpg") center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
 .promo .promo_header {
@@ -109,7 +115,7 @@ nav {
   margin-top: 23px;
 }
 .promo .promo_btn {
-  display: block;
+  display: block; /* т.к кнопка инлайновый эл-т, а мы её сиавим по центру*/
   margin: 118px auto 0 auto;
   width: 265px;
   height: 69px;
@@ -124,6 +130,7 @@ nav {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
+/*section reason*/
 .reasons {
   padding: 71px 0 65px 0;
 }
@@ -138,8 +145,9 @@ nav {
   font-size: 11px;
   font-weight: 300;
   text-transform: uppercase;
+  text-align: center;
 }
-
+/* общие стили */
 .title {
   margin-bottom: 0;
   margin-top: 38px;
@@ -148,6 +156,14 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+/* общие стили */
+.subtitle {
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  color: #222222;
 }
 
 .reasons .reasons_block {
@@ -185,3 +201,12 @@ nav {
   font-weight: 300;
   line-height: 21px;
 }
+/* section mobile*/
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/mobile_bg.png") center center/cover no-repeat;
+}
+/* .mobile_item {
+
+} */
