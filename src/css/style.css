@@ -134,9 +134,9 @@ nav {
 .reasons {
   padding: 71px 0 65px 0;
 }
-
+/* общие стили для reasons & mobile*/
 .label {
-  margin: 0 auto;
+  margin: 0 auto 32px;
   height: 24px;
   width: 112px;
   padding: 5px 12px;
@@ -149,21 +149,12 @@ nav {
 }
 /* общие стили */
 .title {
-  margin-bottom: 0;
-  margin-top: 38px;
+  margin: 0;
   color: #222222;
   font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-}
-/* общие стили */
-.subtitle {
-  margin-top: 19px;
-  font-size: 17px;
-  font-weight: 400;
-  text-align: center;
-  color: #222222;
 }
 
 .reasons .reasons_block {
@@ -207,6 +198,33 @@ nav {
   padding: 48px 0 79px 0;
   background: url("../img/mobile_bg.png") center center/cover no-repeat;
 }
-/* .mobile_item {
-
-} */
+.mobile_item {
+  height: 280px;
+  width: 320px;
+  margin: 0 auto;
+}
+.mobile_subtitle {
+  margin: 1px 0 30px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  color: #222222;
+}
+.mobile_item_1 {
+  background: url("../img/Card_1.jpg") center center/cover no-repeat;
+}
+.mobile_item_2 {
+  background: url("../img/Card_2.jpg") center center/cover no-repeat;
+}
+.mobile_item_3 {
+  background: url("../img/Card_3.jpg") center center/cover no-repeat;
+}
+.mobile_item_4 {
+  background: url("../img/Card_4.jpg") center center/cover no-repeat;
+}
+.mobile_item_5 {
+  background: url("../img/Card_5.jpg") center center/cover no-repeat;
+}
+.mobile_item_6 {
+  background: url("../img/Card_6.jpg") center center/cover no-repeat;
+}
