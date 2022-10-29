@@ -2,7 +2,7 @@
   font-family: "Roboto", sans-serif;
 }
 a {
-  text-decoration: none;
+  text-decoration-line: none;
 }
 header {
   position: relative;
@@ -24,6 +24,10 @@ nav {
   font-size: 15px;
   font-weight: 300;
   color: #ffffff;
+}
+.menu_link:hover {
+  color: #1eacc7;
+  transition: 0.5s all;
 }
 .menu .menu_item:not(:last-child) {
   border-right: 2px dotted black; /* задаём гориз.разделители */
@@ -59,6 +63,7 @@ nav {
   margin-top: 19px;
   text-align: right;
 }
+
 .subheader .subheader_phone {
   display: block;
   font-size: 22px;
@@ -66,6 +71,10 @@ nav {
   text-transform: uppercase;
   text-align: right;
   color: #ffffff;
+}
+.subheader_phone:hover {
+  color: #1eacc7;
+  transition: 0.5s all;
 }
 .subheader .subheader_btn {
   margin-top: 19px;
@@ -164,14 +173,12 @@ nav {
   text-transform: uppercase;
   text-align: center;
 }
-
 .reasons .reasons_block {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 35px;
 }
-
 .reasons .reasons_block .reasons_round {
   display: flex;
   justify-content: center;
@@ -182,18 +189,15 @@ nav {
   background-color: #1eacc7;
   border-radius: 100%;
 }
-
 .reasons .reasons_block .reasons_descr {
   width: 343px;
 }
-
 .reasons .reasons_block .reasons_descr .reasons_subtitle {
   line-height: 21px;
   color: #1eacc7;
   font-size: 17px;
   font-weight: 400;
 }
-
 .reasons .reasons_block .reasons_descr .reasons_text {
   color: #202020;
   font-size: 15px;
@@ -260,4 +264,28 @@ nav {
   margin: 73px auto 0;
   border-radius: 100%;
   cursor: pointer;
+}
+/*общие стили для прыгающего плюсика*/
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+/*подключение конкретно к нашему*/
+.mobile_item_plus:hover {
+  animation: bounce 1s;
 }
