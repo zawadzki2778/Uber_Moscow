@@ -289,31 +289,70 @@ nav {
 .mobile_item_plus:hover {
   animation: bounce 1s;
 }
+/*===========================*/
 /* section choice */
 .choice {
-  height: 900px;
-  width: 1920px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("../img/bg_choice.png") center center / cover no-repeat;
 }
 .black {
-  height: 502px;
-  width: 1920px;
-  left: 0px;
-  top: 2560px;
-  border-radius: 0px;
-  background: #070716;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
 }
-.label_white {
+.label .label_white {
   height: 27px;
   width: 115px;
-  border-color: #ffffff;
   font-family: Roboto;
+  background: #ffffff;
   font-size: 11px;
   font-weight: 400;
   line-height: 11px;
-  letter-spacing: 0px;
   text-align: center;
   color: #070716;
-  margin: 51px auto 29px;
+
 }
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* .choice 
+	position: relative
+	min-height: 895px
+	padding: 57px 0 138px 0
+	background: url('../img/bg/mobile_app.png') center (center / cover) no-repeat
+	&_img 
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_descr 
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	.black 
+		position: absolute 
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: #070716
+		z-index: 1 */
