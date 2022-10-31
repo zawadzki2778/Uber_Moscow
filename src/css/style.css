@@ -13,6 +13,7 @@ nav {
   width: 100%;
   height: 50px;
   background: #212121;
+  z-index: 3;
 }
 .menu {
   display: flex;
@@ -36,7 +37,7 @@ nav {
 }
 .subheader {
   position: absolute; /* что бы картинка наехала */
-  top: 50px;
+  top: 50px; /* добавили, что-бы на налазили блоки др. на друга при position: fixid */
   width: 100%; /* 100% от родителя header*/
   height: 84px;
   background: rgba(
@@ -155,6 +156,7 @@ nav {
 }
 /* общие стили для reasons & mobile*/
 .label {
+  position: relative;
   margin: 0 auto 32px;
   height: 24px;
   width: 112px;
@@ -168,12 +170,17 @@ nav {
 }
 /* общие стили */
 .title {
+  position: relative;
   margin: 0;
   color: #222222;
   font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+.title_white {
+  color: #fff;
+  z-index: 2;
 }
 .reasons .reasons_block {
   display: flex;
@@ -297,32 +304,37 @@ nav {
   position: relative;
   min-height: 895px;
   padding: 57px 0 138px 0;
-  background: url("../img/bg_choice.png") center center / cover no-repeat;
+  background: url("../img/mobile_bg.png") center center / cover no-repeat;
 }
 .black {
   position: absolute;
   top: 0;
   left: 0;
-  height: 499px;
+  height: 498px;
   width: 100%;
   background-color: #070716;
   z-index: 1;
 }
-.label .label_white {
-  height: 27px;
-  width: 115px;
-  font-family: Roboto;
-  background: #ffffff;
+.label_white {
+  position: relative;
+  margin: 0 auto 27px;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
   font-size: 11px;
-  font-weight: 400;
-  line-height: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
   text-align: center;
-  color: #070716;
+  background-color: #fff;
+  color: #000;
+  z-index: 2;
 }
 .choice_img {
   position: relative;
   display: block;
-  margin: 56px auto 0 auto;
+  margin: 52px auto 0 auto;
   z-index: 2;
 }
 .choice_descr {
@@ -331,4 +343,13 @@ nav {
   font-size: 17px;
   font-weight: 300;
   line-height: 24px;
+}
+.subtitle_white {
+  position: relative;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
 }
